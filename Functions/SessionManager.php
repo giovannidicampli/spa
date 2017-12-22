@@ -1,0 +1,7 @@
+<?php
+session_start();
+$is_logged = (isset($_SESSION) && isset($_SESSION['logged']))?true:false;
+$is_authorized = (isset($_SESSION) && isset($_SESSION['private']))?true:false;
+$is_user = (isset($_SESSION) && isset($_SESSION['user']))?true:false;
+$username = ($is_logged)?$_SESSION['username']:'';
+?>
