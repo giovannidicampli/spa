@@ -4,7 +4,6 @@
     <title>Home</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
@@ -16,24 +15,24 @@ include 'nav.php';
 print_r($_SESSION);
 ?>
 
-<?php
-echo ('Questa è la home page');
-?>
+<!--****************-->
+<!--****Carousel****-->
+<!--****************-->
 
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4500" data-pause"hover">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <img src="Images/img1.jpg" alt="1" >
+            <img src="Images/img4.png" alt="1" >
         </div>
 
         <div class="item">
@@ -44,7 +43,10 @@ echo ('Questa è la home page');
             <img src="Images/img3.jpg" alt="3">
         </div>
         <div class="item">
-            <img src="Images/img4.jpg" alt="4">
+            <img src="Images/img1.jpg" alt="4">
+        </div>
+        <div class="item">
+            <img src="Images/img5.jpg" alt="5">
         </div>
     </div>
 
