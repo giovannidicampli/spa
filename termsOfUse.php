@@ -4,53 +4,96 @@
     <title>Registrati</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <?php
+    $selector = 90;
+    include 'nav.php';
+    ?>
 </head>
 <body>
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.php">
-                <img style="max-width:100px; margin-top: -20px;"
-                     src="Images/logo.jpg">
-            </a>
-        </div>
+<div class="container">
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="struttura.php">La struttura <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                       aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="loginPage.php">Login</a></li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
+    <h2>Termini di utilizzo</h2>
+
+    <p>Terms of Service ("Terms")
+        Last updated: December 23, 2017
+        Please read these Terms of Service ("Terms", "Terms of Service")
+        carefully before using the www.villasalus.it website (the "Service")
+        operated by Villa Salus ("us", "we", or "our").
+        Your access to and use of the Service is conditioned on your
+        acceptance of and compliance with these Terms. These Terms apply
+        to all visitors, users and others who access or use the Service.
+        By accessing or using the Service you agree to be bound by these
+        Terms. If you disagree with any part of the terms then you may not
+        access the Service. Terms of Service Template for Villa Salus.
+        Accounts
+        When you create an account with us, you must provide us information
+        that is accurate, complete, and current at all times. Failure to do so
+        constitutes a breach of the Terms, which may result in immediate
+        termination of your account on our Service.
+        You are responsible for safeguarding the password that you use to
+        access the Service and for any activities or actions under your
+        password, whether your password is with our Service or a third-party
+        service.
+        You agree not to disclose your password to any third party. You must
+        notify us immediately upon becoming aware of any breach of security
+        or unauthorized use of your account.
+        Links To Other Web Sites
+        Our Service may contain links to third-party web sites or services that
+        are not owned or controlled by Villa Salus.
+        Villa Salus has no control over, and assumes no responsibility for, the
+        content, privacy policies, or practices of any third party web sites or
+        services. You further acknowledge and agree that Villa Salus shall not
+        be responsible or liable, directly or indirectly, for any damage or loss
+        caused or alleged to be caused by or in connection with use of or
+        reliance on any such content, goods or services available on or
+        through any such web sites or services.
+        We strongly advise you to read the terms and conditions and privacy
+        policies of any third-party web sites or services that you visit.
+        Termination
+        We may terminate or suspend access to our Service immediately,
+        without prior notice or liability, for any reason whatsoever, including
+        without limitation if you breach the Terms.
+        All provisions of the Terms which by their nature should survive
+        termination shall survive termination, including, without limitation,
+        ownership provisions, warranty disclaimers, indemnity and limitations
+        of liability.
+        We may terminate or suspend your account immediately, without prior
+        notice or liability, for any reason whatsoever, including without
+        limitation if you breach the Terms.
+        Upon termination, your right to use the Service will immediately
+        cease. If you wish to terminate your account, you may simply
+        discontinue using the Service.
+        All provisions of the Terms which by their nature should survive
+        termination shall survive termination, including, without limitation,
+        ownership provisions, warranty disclaimers, indemnity and limitations
+        of liability.
+        Governing Law
+        These Terms shall be governed and construed in accordance with the
+        laws of Italy, without regard to its conflict of law provisions.
+        Our failure to enforce any right or provision of these Terms will not be
+        considered a waiver of those rights. If any provision of these Terms is
+        held to be invalid or unenforceable by a court, the remaining
+        provisions of these Terms will remain in effect. These Terms
+        constitute the entire agreement between us regarding our Service,
+        and supersede and replace any prior agreements we might have
+        between us regarding the Service.
+        Changes
+        We reserve the right, at our sole discretion, to modify or replace these
+        Terms at any time. If a revision is material we will try to provide at
+        least 60 days notice prior to any new terms taking effect. What
+        constitutes a material change will be determined at our sole
+        discretion.
+        By continuing to access or use our Service after those revisions
+        become effective, you agree to be bound by the revised terms. If you
+        do not agree to the new terms, please stop using the Service.
+        Contact Us
+        If you have any questions about these Terms, please contact us.</p>
+
+</div>
+
 </body>
 </html>
-
-<?php echo "Termini di utilizzo"; ?>

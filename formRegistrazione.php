@@ -4,7 +4,7 @@
     <title>Registrati</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-<!--    <script src="Functions/register.php"></script>-->
+
 </head>
 <body>
 <?php
@@ -56,8 +56,13 @@ include 'nav.php';
             <div class="col-sm-9 col-sm-offset-3">
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" required="required">Accetto i <a href="termsOfUse.php">termini</a>
+                        <input type="checkbox" required="required">Dichiaro di aver letto e accettato i <a href="termsOfUse.php">termini</a>
                     </label>
+                </div>
+                <div class="checkbox">
+                <label>
+                    <input type="checkbox" >Iscrivimi alla Newsletter per non perderti sconti e offerte!</a>
+                </label>
                 </div>
             </div>
         </div> <!-- /.form-group -->

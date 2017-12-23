@@ -3,7 +3,7 @@ include 'Functions/SessionManager.php';
 $print_class = 'class="active"';
 ?>
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #d2c3c5">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse">

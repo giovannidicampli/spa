@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+
     <title>Home</title>
 
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Custom styles for this template -->
+    <link href="bootstrap-3.3.7-dist/css/sticky-footer.css" rel="stylesheet">
 
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body style="background-color: #d2e5fe">
 <?php
 $selector = 0 ;
 include 'nav.php';
-print_r($_SESSION);
 ?>
+
 
 <!--****************-->
 <!--****Carousel****-->
 <!--****************-->
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4500" data-pause"hover">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin: auto" data-interval="4500" data-pause"hover">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -60,6 +61,15 @@ print_r($_SESSION);
         <span class="sr-only">Next</span>
     </a>
 </div>
+
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">2018 Villa Salus. All right reserved.</p>
+    </div>
+</footer>
+
+
 
 </body>
 </html>
