@@ -1,26 +1,33 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-
     <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/sticky-footer.css">
 
-    <!-- Custom styles for this template -->
-    <link href="bootstrap-3.3.7-dist/css/sticky-footer.css" rel="stylesheet">
+<!--*******Questi due script si trovano già in nav.php. Se li aggiungo anche qui mi danno problemi.******-->
 
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+<!--*****<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
 </head>
-<body style="background-color: #d2e5fe">
+<body>
+
+<!--****************-->
+<!--*****Navbar*****-->
+<!--****************-->
+
 <?php
-$selector = 0 ;
+$selector = 0;
 include 'nav.php';
 ?>
-
 
 <!--****************-->
 <!--****Carousel****-->
 <!--****************-->
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin: auto" data-interval="4500" data-pause"hover">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4500" data-pause"hover">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -62,6 +69,9 @@ include 'nav.php';
     </a>
 </div>
 
+<!--****************-->
+<!--*****Footer*****-->
+<!--****************-->
 
 <footer class="footer">
     <div class="container">
@@ -73,5 +83,3 @@ include 'nav.php';
 
 </body>
 </html>
-
-

@@ -1,12 +1,18 @@
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
 <?php
 include 'Functions/SessionManager.php';
 $print_class = 'class="active"';
 ?>
 
-<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #d2c3c5">
+<nav class="navbar navbar-inverse" style="background-color: #000000">
     <div class="container-fluid">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
