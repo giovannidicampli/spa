@@ -8,7 +8,7 @@ require_once 'Functions/SessionManager.php';
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <title>Modifica Prezzi e Pacchetti</title>
+    <title>Modifica Prezzi e Pacchetti | VillaSalus</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 

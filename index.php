@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Home</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/sticky-footer.css">
+    <title>Home | VillaSalus</title>
 
-<!--*******Questi due script si trovano già in nav.php. Se li aggiungo anche qui mi danno problemi.******-->
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css" media="all">
 
-<!--*****<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>-->
+
 </head>
 <body>
 
@@ -18,16 +15,18 @@
 <!--*****Navbar*****-->
 <!--****************-->
 
-<?php
-$selector = 0;
-include 'nav.php';
-?>
+<nav>
+    <?php
+    $selector = 0;
+    include 'nav.php';
+    ?>
+</nav>
 
 <!--****************-->
 <!--****Carousel****-->
 <!--****************-->
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4500" data-pause"hover">
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4500" data-pause="hover">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -40,7 +39,7 @@ include 'nav.php';
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active">
-            <img src="Images/img4.png" alt="1" >
+            <img src="Images/img1.jpg" alt="1">
         </div>
 
         <div class="item">
@@ -51,7 +50,7 @@ include 'nav.php';
             <img src="Images/img3.jpg" alt="3">
         </div>
         <div class="item">
-            <img src="Images/img1.jpg" alt="4">
+            <img src="Images/img4.jpg" alt="4">
         </div>
         <div class="item">
             <img src="Images/img5.jpg" alt="5">
@@ -73,13 +72,9 @@ include 'nav.php';
 <!--*****Footer*****-->
 <!--****************-->
 
-<footer class="footer">
-    <div class="container">
-        <p class="text-muted">2018 Villa Salus. All right reserved.</p>
-    </div>
-</footer>
-
-
+<div class="footer">
+    <p>2018 Villa Salus. All right reserved.</p>
+</div>
 
 </body>
 </html>

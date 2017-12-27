@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <title>Registrati</title>
+    <title>Registrati | VillaSalus</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
@@ -61,7 +61,7 @@ include 'nav.php';
                 </div>
                 <div class="checkbox">
                 <label>
-                    <input type="checkbox" >Iscrivimi alla Newsletter per non perderti sconti e offerte!</a>
+                    <input type="checkbox" id="newsletter" >Iscriviti alla Newsletter per non perdere sconti e offerte!</a>
                 </label>
                 </div>
             </div>

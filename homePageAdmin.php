@@ -1,13 +1,7 @@
-<?php
-
-include('Functions/SessionManager.php');
-
-?>
-
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <title>Admin home</title>
+    <title>Admin home | VillaSalus</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
