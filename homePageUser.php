@@ -15,5 +15,13 @@ include 'nav.php';
 
 <h3>Benvenuto <?php echo $_SESSION['username']; ?>!</h3>
 
+<!--****************-->
+<!--*****Footer*****-->
+<!--****************-->
+
+<div class="footer">
+    <p>2018 Villa Salus. All right reserved.</p>
+</div>
+
 </body>
 </html>

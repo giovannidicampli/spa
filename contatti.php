@@ -4,7 +4,6 @@
     <title>Contatti | VillaSalus</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css" media="all" >
 
 </head>
 <body>
@@ -14,6 +13,7 @@ $selector = 3;
 include 'nav.php';
 ?>
 
+<br>
 <div class="contact">
     <div class="container">
         <h1>Dove Siamo</h1>
@@ -49,10 +49,7 @@ include 'nav.php';
             </form>
         </div>
         <div class="col-md-6 contact-left">
-            <h3>At vero eos et accusamus </h3>
-            <p>Blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas.At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas. </p>
-
+            <h3>Indirizzo </h3>
 
             <div class="address">
                 <div class=" address-grid">

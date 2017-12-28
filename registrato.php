@@ -12,7 +12,15 @@
 $selector = 7;
 include 'nav.php';
 ?>
-<br> <br> <br>
+
+
+<!--****************-->
+<!--*****Footer*****-->
+<!--****************-->
+
+<div class="footer">
+    <p>2018 Villa Salus. All right reserved.</p>
+</div>
 
 </body>
 </html>

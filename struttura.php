@@ -13,5 +13,13 @@ include 'nav.php';
 echo "pagina della struttura";
 ?>
 
+<!--****************-->
+<!--*****Footer*****-->
+<!--****************-->
+
+<div class="footer">
+    <p>2018 Villa Salus. All right reserved.</p>
+</div>
+
 </body>
 </html>

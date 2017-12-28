@@ -6,8 +6,8 @@ $print_class = 'class="active"';
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css" media="all" >
 </head>
-
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -17,7 +17,7 @@ $print_class = 'class="active"';
                 <span class="icon-bar"></span>
             </button>
             <a href="index.php" class="navbar-brand" style="width: 100px;">
-                <img style="max-width:90px; margin-top: -10px; margin-left: -10px" class="logo" src="Images/logo.svg" alt="Logo">
+                <img style="max-width:90px; margin-top: -10px; margin-left: -10px" class="logo" src="Images/Senzatitolo.svg" alt="Logo">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">

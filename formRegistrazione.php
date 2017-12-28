@@ -4,7 +4,7 @@
     <title>Registrati | VillaSalus</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-
+    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <?php
@@ -12,9 +12,9 @@ $selector = 7 ;
 include 'nav.php';
 ?>
 
-<br><br><br><br>
+<br>
 
-<div class="container">
+<div class="container" style="margin-left: -10px">
     <form class="form-horizontal" id="registerForm" role="form" method="post" action="Functions/register.php">
         <div class="form-group">
             <label class="col-sm-3 control-label">Nome</label>
@@ -71,7 +71,15 @@ include 'nav.php';
                 <button type="submit" class="btn btn-primary btn-block">Registrati</button>
             </div>
         </div>
-    </form> <!-- /form
-</div> <!-- ./container -->
+    </form> <!-- /form -->
+
+    <!--****************-->
+    <!--*****Footer*****-->
+    <!--****************-->
+
+    <div class="footer">
+        <p>2018 Villa Salus. All right reserved.</p>
+    </div>
+
 </body>
 </html>

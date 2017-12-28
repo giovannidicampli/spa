@@ -5,8 +5,6 @@
     <title>Home | VillaSalus</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css" media="all">
-
 
 </head>
 <body>

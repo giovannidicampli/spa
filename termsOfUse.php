@@ -15,7 +15,6 @@
 <body>
 
 <div class="container">
-
     <h2>Termini di utilizzo</h2>
 
     <p>Terms of Service ("Terms")
@@ -93,6 +92,14 @@
         Contact Us
         If you have any questions about these Terms, please contact us.</p>
 
+</div>
+
+<!--****************-->
+<!--*****Footer*****-->
+<!--****************-->
+
+<div class="footer">
+    <p>2018 Villa Salus. All right reserved.</p>
 </div>
 
 </body>
