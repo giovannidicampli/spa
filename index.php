@@ -5,6 +5,7 @@
     <title>Home | VillaSalus</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="favIcon/favicon.ico">
 
 </head>
 <body>
@@ -64,6 +65,12 @@
         <span class="glyphicon glyphicon-chevron-right"></span>
         <span class="sr-only">Next</span>
     </a>
+</div>
+
+<div class="contact">
+    <div class="contact-top">
+        <h1>Benvenuto in Villa Salus</h1>
+    </div>
 </div>
 
 <!--****************-->

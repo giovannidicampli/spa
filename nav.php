@@ -6,7 +6,8 @@ $print_class = 'class="active"';
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css" media="all" >
+    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css" media="all">
+
 </head>
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
