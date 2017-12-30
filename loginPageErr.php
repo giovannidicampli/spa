@@ -56,6 +56,9 @@ include 'nav.php';
                             <button type="submit" class="btn btn-primary">Login</button>
                         </div>
                     </div>
+                    <div class="alert alert-danger">
+                        <strong>Attenzione!</strong> Username o Password errata.
+                    </div>
 
 
                     <div class="form-group">

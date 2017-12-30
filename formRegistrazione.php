@@ -46,12 +46,12 @@ include 'nav.php';
                 <input name="password" type="password" id="password" placeholder="Password" class="form-control" required="required">
             </div>
         </div>
-        <!--<div class="form-group">
+        <div class="form-group">
             <label class="col-sm-3 control-label">Ripeti Password</label>
             <div class="col-sm-9">
                 <input type="password" id="password2" placeholder="Ripeti Password" class="form-control" required="required">
             </div>
-        </div>-->
+        </div>
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
                 <div class="checkbox">
@@ -68,10 +68,26 @@ include 'nav.php';
         </div> <!-- /.form-group -->
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
-                <button type="submit" class="btn btn-primary btn-block">Registrati</button>
+                <button type="submit" id="submitpassword" class="btn btn-primary btn-block">Registrati</button>
             </div>
         </div>
     </form> <!-- /form -->
+
+<!--********Serve a controllare se le password coincidono*************-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#submitpassword").click(function () {
+                var password = $("#password").val();
+                var confirmPassword = $("#password2").val();
+                if (password != confirmPassword) {
+                    alert("Le password non coincidono.");
+                    return false;
+                }
+                return true;
+            });
+        });
+    </script>
 
     <!--****************-->
     <!--*****Footer*****-->

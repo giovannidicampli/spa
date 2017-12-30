@@ -3,6 +3,7 @@
 
 <head>
     <title>Home | VillaSalus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link rel="shortcut icon" href="favIcon/favicon.ico">
@@ -67,12 +68,18 @@
     </a>
 </div>
 
-<div class="contact">
-    <div class="contact-top">
-        <h1>Benvenuto in Villa Salus</h1>
-    </div>
-</div>
 
+<!--Jumbotron-->
+<div class="jumbotron" style="background: #d3c1a7; font-family: 'Lora', serif">
+    <div class="container text-center">
+        <h1>Benvenuto in Villa Salus</h1>
+        <p>Il vostro SPA Resort in Molise ispirata dalla forza del mare.</p>
+    </div>
+</div><!--Jumbotron-->
+
+
+
+</div>
 <!--****************-->
 <!--*****Footer*****-->
 <!--****************-->

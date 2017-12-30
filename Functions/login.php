@@ -21,7 +21,7 @@ if ($password == $result['password']) {
         header("Location: ../homePageUser.php");
     }
 } else {
-    echo "Errore";
+    header("Location: ../loginPageErr.php");
 }
 $db_instance->connection->close();
 ?>
