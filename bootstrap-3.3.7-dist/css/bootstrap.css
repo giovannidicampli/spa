@@ -5,7 +5,6 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-
 html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
@@ -5131,7 +5130,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 @media (min-width: 768px) {
     .navbar {
-        border-radius: 4px;
+        border-radius: 0px;
     }
 }
 
@@ -7004,7 +7003,7 @@ button.list-group-item-danger.active:focus {
 }
 
 .panel-info {
-    border-color: #000000;
+    border-color: rgba(49, 112, 143, 0.72);
 }
 
 .panel-info > .panel-heading {

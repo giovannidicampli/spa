@@ -1,12 +1,12 @@
 <?php
-include 'Functions/SessionManager.php';
+include 'Manager/SessionManager.php';
 $print_class = 'class="active"';
 ?>
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="shortcut icon" href="favIcon/favicon.ico">
 
 </head>
 <nav class="navbar navbar-inverse">
@@ -18,7 +18,8 @@ $print_class = 'class="active"';
                 <span class="icon-bar"></span>
             </button>
             <a href="index.php" class="navbar-brand" style="width: 100px;">
-                <img style="max-width:90px; margin-top: -10px; margin-left: -10px" class="logo" src="Images/Senzatitolo.svg" alt="Logo">
+                <img style="max-width:90px; margin-top: -10px; margin-left: -10px" class="logo"
+                     src="Images/logo.svg" alt="Logo">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -28,13 +29,14 @@ $print_class = 'class="active"';
                 <li <?= ($selector == 2) ? $print_class : '' ?>><a href="prezzi.php">Prezzi e Pacchetti</a></li>
                 <li <?= ($selector == 3) ? $print_class : '' ?>><a href="contatti.php">Contatti</a></li>
                 <?php
-                if ($is_authorized) {
+                if ( $is_authorized ) {
                     ?>
                     <li <?= ($selector == 4) ? $print_class : '' ?>><a href="homePageAdmin.php">Profilo Admin</a></li>
-                    <li <?= ($selector == 5) ? $print_class : '' ?>><a href="editPrezzi.php">Modifica prezzi e pacchetti</a></li>
+                    <li <?= ($selector == 5) ? $print_class : '' ?>><a href="editPrezzi.php">Modifica prezzi e
+                            pacchetti</a></li>
                     <?php
                 }
-                if ($is_logged && !$is_authorized) {
+                if ( $is_logged && !$is_authorized ) {
                     ?>
                     <li <?= ($selector == 6) ? $print_class : '' ?>><a href="homePageUser.php">Profilo</a></li>
                     <?php
@@ -44,7 +46,7 @@ $print_class = 'class="active"';
             </ul>
 
             <?php
-            if ($is_logged) { ?>
+            if ( $is_logged ) { ?>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="Functions/logout.php">Logout</a></li>
                 </ul>
