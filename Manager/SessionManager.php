@@ -1,8 +1,7 @@
 <?php
-if(!isset($_SESSION))
-    {
-        session_start();
-    }
+if ( !isset($_SESSION) ) {
+    session_start();
+}
 
 $is_logged = (isset($_SESSION) && isset($_SESSION['logged'])) ? true : false;
 $is_authorized = (isset($_SESSION) && isset($_SESSION['private'])) ? true : false;

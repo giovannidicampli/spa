@@ -27,9 +27,8 @@ echo "pagina dei prezzi";
         </header>
 
 
-
         <!-- Galleria -->
-        <div class = "row">
+        <div class="row">
 
             <?php
             require_once 'Functions/MysqlManager.php';
@@ -43,8 +42,8 @@ echo "pagina dei prezzi";
 
             while ($rowC = mysqli_fetch_array($result)) {
                 ?>
-                <div class = "4u 12u$(mobile)">
-                    <article class = "item">
+                <div class="4u 12u$(mobile)">
+                    <article class="item">
 
                         <header>
                             <h3><?= $rowC['nome'] ?></h3>

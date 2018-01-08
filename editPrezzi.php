@@ -36,44 +36,29 @@ if ( $is_authorized ) {
         </div>
     </div>
 
-        <div>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th colspan="6">Offerte Online</th>
-                </tr>
-                <tr>
-                    <th colspan="">Nome</th>
-                    <th colspan="">Data Inizio</th>
-                    <th colspan="">Data Fine</th>
-                    <th colspan="">Descrizione</th>
-                    <th colspan="">Prezzo</th>
+    <div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th colspan="6">Offerte Online</th>
+            </tr>
+            <tr>
+                <th colspan="">Nome</th>
+                <th colspan="">Data Inizio</th>
+                <th colspan="">Data Fine</th>
+                <th colspan="">Descrizione</th>
+                <th colspan="">Prezzo</th>
 
-                </tr>
-                <?php
-                require_once 'Functions/printOfferta.php';
-                ?>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
+            </tr>
+            <?php
+            require_once 'Functions/printOfferta.php';
+            ?>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 
-
-    <!--****************-->
-    <!--*****Footer*****-->
-    <!--****************-->
-
-    <footer style="background-color: #0f0f0f">
-        <div class="container text-center">
-            <p style="color: #777; margin-top: 5px">&copy; 2018 Villa Salus. All right reserved.</p>
-            <ul class="list-inline">
-                <li><a href="#" style="color: rgba(0,183,252,0.43)">Twitter</a></li>
-                <li><a href="#" style="color: rgba(0,183,252,0.43)">Facebook</a></li>
-                <li><a href="#" style="color: rgba(0,183,252,0.43)">YouTube</a></li>
-            </ul>
-        </div><!-- end Container-->
-    </footer>
 
     </body>
     </html>

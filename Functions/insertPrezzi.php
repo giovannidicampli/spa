@@ -16,11 +16,12 @@ $campi = array("nome", "dataInizio", "dataFine", "descrizione", "prezzo");
 
 $valori = array($nome, $dataInizio, $dataFine, $descrizione, $prezzo, /*'immaginiOfferta/' . $nome*/);
 
-$result = $db_instance-> insert('offerta', $campi, $valori );
-if ($result) {
+$result = $db_instance->insert('offerta', $campi, $valori);
+if ( $result ) {
     header("location: ../editPrezzi.php");
-}else {
-    header("location: ../editPrezziErr.php");}
+} else {
+    header("location: ../editPrezziErr.php");
+}
 $db_instance->connection->close();
 
 ?>

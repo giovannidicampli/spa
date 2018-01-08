@@ -103,4 +103,5 @@ class DbManager
         return $this->connection->query($query);
     }
 }
+
 ?>

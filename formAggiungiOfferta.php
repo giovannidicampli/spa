@@ -44,15 +44,9 @@ if ( $is_authorized ) { ?>
             </div>
 
             <div class="form-group">
-                <textarea name="user-message" tabindex="4" form="formOfferta" id="descrizione" class="form-control"
-                          cols="20" rows="10" placeholder="Cosa comprende l'offerta?"></textarea>
+                <input type="text" name="descrizione" id="descrizione" tabindex="4"
+                       class="form-control form-input" placeholder="Descrizione">
             </div>
-
-
-<!--            <div class="form-group">-->
-<!--                <input type="text" name="descrizione" id="descrizione" tabindex="4"-->
-<!--                       class="form-control form-input" placeholder="Descrizione">-->
-<!--            </div>-->
 
             <div class="form-group">
                 <input type="text" name="prezzo" id="prezzoOfferta" tabindex="5"

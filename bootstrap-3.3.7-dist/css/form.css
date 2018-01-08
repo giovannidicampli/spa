@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +19,7 @@ body {
     font-size: 12px;
     line-height: 30px;
     color: #777;
-    background: #e8edec ;
+    background: #e8edec;
 }
 
 .container {
@@ -50,8 +51,6 @@ body {
     margin: 15px 0;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-
-
 
 #contact h3 {
     display: block;
@@ -125,7 +124,6 @@ fieldset {
 #contact button[type="submit"]:active {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
-
 
 #contact input:focus,
 #contact textarea:focus {

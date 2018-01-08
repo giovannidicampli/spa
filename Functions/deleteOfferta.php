@@ -1,3 +1,14 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>VillaSalus</title>
+
+    <link href="../bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+
 <?php
 
 require_once 'MysqlManager.php';
@@ -12,29 +23,23 @@ $result = mysqli_query($conn, $query);
 
 
 if ( mysqli_query($conn, $query) ) {
-    echo "ok";
-//}
-//
-//    echo "<link rel='stylesheet' href='../editPrezzi.php' />
-//
-//<div class='container_log_out'>
-//    <form id='contact' action='/editPrezzi.php' method='post'>
-//        <h1>Eliminato!</h1>
-//        <button type='submit'>Ok</button>
-//    </form>
-//</div>";
+
+    echo "
+<div class='container'>
+    <form id='delete' action='../editPrezzi.php' method='post'>
+        <h1>Eliminato!</h1>
+        <button class='btn btn-primary' type='submit'>Ok</button>
+    </form>
+</div>";
 
 } else {
 
-    echo "non ok";
-
-//    echo "<link rel='stylesheet' href='../editPrezzi.php' />
-//
-//<div class='container_log_out'>
-//    <form id='contact' action='/editPrezzi.php' method='post'>
-//        <h1>Errore!</h1>
-//        <h3>Riprova</h3>
-//        <button name='Log_Out' type='submit' id='contact-submit' data-submit='...Log Out'>Ok</button>
-//    </form>
-//</div>";
+    echo "
+<div class='container'>
+    <form id='delete' action='../editPrezzi.php' method='post'>
+        <h1>Errore!</h1>
+        <h3>Riprova</h3>
+        <button class='btn btn-primary' type='submit'>Ok</button>
+    </form>
+</div>";
 }
