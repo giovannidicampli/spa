@@ -20,7 +20,7 @@ $result = $db_instance-> insert('offerta', $campi, $valori );
 if ($result) {
     header("location: ../editPrezzi.php");
 }else {
-    header("location: ../index.php");}
+    header("location: ../editPrezziErr.php");}
 $db_instance->connection->close();
 
 ?>

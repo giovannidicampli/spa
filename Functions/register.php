@@ -24,7 +24,7 @@ if ( $numUsername != 0 ) {
 } else {
     $result = $db_instance->insert('utente', array('nome', 'cognome', 'username', 'email', 'password'), array($nome, $cognome, $username, $email, $password));
     if ( !$result ) {
-        echo "No result";
+        echo "Nessun inserimento nel DB";
     } else {
         $oggetto = "Registrazione SPA";
         $corpo = '<html>

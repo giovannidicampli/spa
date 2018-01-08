@@ -6,7 +6,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="shortcut icon" href="favIcon/favicon.ico">
 
 </head>

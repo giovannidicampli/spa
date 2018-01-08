@@ -44,13 +44,17 @@ if ( $is_authorized ) { ?>
             </div>
 
             <div class="form-group">
-                <input type="text" name="descrizione" id="descrizione" tabindex="4"
-                       class="form-control form-input"
-                       placeholder="Descrizione">
+                <textarea name="user-message" tabindex="4" form="formOfferta" id="descrizione" class="form-control"
+                          cols="20" rows="10" placeholder="Cosa comprende l'offerta?"></textarea>
             </div>
 
+
+<!--            <div class="form-group">-->
+<!--                <input type="text" name="descrizione" id="descrizione" tabindex="4"-->
+<!--                       class="form-control form-input" placeholder="Descrizione">-->
+<!--            </div>-->
+
             <div class="form-group">
-                <label for="prezzo">Prezzo</label>
                 <input type="text" name="prezzo" id="prezzoOfferta" tabindex="5"
                        class="form-control form-input"
                        placeholder="Prezzo" value="" required="required">
@@ -70,16 +74,6 @@ if ( $is_authorized ) { ?>
     <!--*****Footer*****-->
     <!--****************-->
 
-    <footer class="footer" style="background-color: #0f0f0f">
-        <div class="container text-center">
-            <p style="color: #777; margin-top: 5px">&copy; 2018 Villa Salus. All right reserved.</p>
-            <ul class="list-inline">
-                <li><a href="#" style="color: rgba(0,183,252,0.43)">Twitter</a></li>
-                <li><a href="#" style="color: rgba(0,183,252,0.43)">Facebook</a></li>
-                <li><a href="#" style="color: rgba(0,183,252,0.43)">YouTube</a></li>
-            </ul>
-        </div><!-- end Container-->
-    </footer>
 
     </body>
     </html>

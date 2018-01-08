@@ -13,6 +13,7 @@ if ( $is_authorized ) {
 
         <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css">
+        <!--        <link href="bootstrap-3.3.7-dist/css/table.css" rel="stylesheet" type="text/css">-->
 
     </head>
     <body>
@@ -36,28 +37,31 @@ if ( $is_authorized ) {
         </div>
     </div>
 
-        <div>
-            <table class="table">
-                <thead>
-                <tr>
-                    <th colspan="6">Offerte Online</th>
-                </tr>
-                <tr>
-                    <th colspan="">Nome</th>
-                    <th colspan="">Data Inizio</th>
-                    <th colspan="">Data Fine</th>
-                    <th colspan="">Descrizione</th>
-                    <th colspan="">Prezzo</th>
+    <div class="alert alert-danger">
+        <strong>Attenzione!</strong> Inserimento offerta non effettuato.
+    </div>
 
-                </tr>
-                <?php
-                require_once 'Functions/printOfferta.php';
-                ?>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
-        </div>
+    <div>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th colspan="6">Offerte Online</th>
+            </tr>
+            <tr>
+                <th>Nome</th>
+                <th colspan="">Data Inizio</th>
+                <th colspan="">Data Fine</th>
+                <th colspan="">Prezzo</th>
+
+            </tr>
+            <?php
+            require_once 'Functions/printOfferta.php';
+            ?>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
 
 
     <!--****************-->
@@ -80,5 +84,6 @@ if ( $is_authorized ) {
 
 <?php } else {
     header("Location: ./loginPage.php");
+    //aggiungere messaggio
 }
 ?>
