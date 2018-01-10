@@ -15,55 +15,63 @@
 <?php
 $selector = 2;
 include 'nav.php';
-echo "pagina dei prezzi";
 ?>
 
 
-<section id="portfolio" class="two">
-    <div class="container">
+<div class="jumbotron" style="background: #d3c1a7; margin-top: -50px; font-family: "Roboto", Helvetica, Arial, sans-serif>
+<div class="container text-center">
+    <h1>Offerte online</h1>
+    <p>le offerte spa che abbiamo scelto per te</p>
+</div>
+</div><!--Fine Jumbotron-->
 
-        <header>
-            <h2>Offerte</h2>
-        </header>
+
+<?php
+require_once 'Functions/MysqlManager.php';
 
 
-        <!-- Galleria -->
+$funzioniMysql = new MysqlClass();
+$conn = $funzioniMysql->connetti();
+
+$query = ("SELECT * FROM offerta");
+$result = mysqli_query($conn, $query);
+
+while ($resultOfferta = mysqli_fetch_array($result)) {
+    $temp1 = explode(" ", $resultOfferta['dataInizio']);
+    $temp2 = explode("-", $temp1[0]);
+    $dataInizioFormattata = $temp2[2] . "/" . $temp2[1] . "/" . $temp2[0];
+
+    $temp1 = explode(" ", $resultOfferta['dataFine']);
+    $temp2 = explode("-", $temp1[0]);
+    $dataFineFormattata = $temp2[2] . "/" . $temp2[1] . "/" . $temp2[0];
+    ?>
+
+    <div class="container-fluid" style="background-color: #d3c1a7; margin-top: -50px">
         <div class="row">
+            <div class="col-sm-8">
+                <h2 style="color: #A65139"><?= $resultOfferta['nome'] ?> </h2>
+                <h3 style="color: #d3c1a7"> Valida dal: <?= $dataInizioFormattata ?> <br> al: <?= $dataFineFormattata ?>
+                </h3>
+                <h4 style="color: #575757; "><?= $resultOfferta['descrizione'] ?></h4>
+                <h4>Prezzo: <? echo $resultOfferta['prezzo']; ?></h4>
+                <button class="btn btn-default" style="color: #0004d3">Acquista</button>
+            </div>
+            <div class="col-sm-4"><br><br>
+                <img src="Images/piscina.jpg" class="img-responsive" alt="image">
 
-            <?php
-            require_once 'Functions/MysqlManager.php';
-
-
-            $funzioniMysql = new MysqlClass();
-            $conn = $funzioniMysql->connetti();
-
-            $query = ("SELECT * FROM offerta");
-            $result = mysqli_query($conn, $query);
-
-            while ($rowC = mysqli_fetch_array($result)) {
-                ?>
-                <div class="4u 12u$(mobile)">
-                    <article class="item">
-
-                        <header>
-                            <h3><?= $rowC['nome'] ?></h3>
-                        </header>
-                    </article>
-                </div>
-                <?php
-            }
-            ?>
-        </div>
-
-
+            </div>
+        </div><!-- End row -->
     </div>
-</section>
+
+
+<?php } ?>
+
+<div class="container-fluid" style="background-color: #d3c1a7; margin-top: 20px"></div>
 
 <!--****************-->
 <!--*****Footer*****-->
 <!--****************-->
-
-<footer class="footer" style="background-color: #0f0f0f;">
+<footer style="background-color: #0f0f0f;">
     <div class="container text-center">
         <p style="color: #777; margin-top: 5px;">&copy; 2018 Villa Salus. All right reserved.</p>
         <ul class="list-inline">
@@ -73,6 +81,7 @@ echo "pagina dei prezzi";
         </ul>
     </div>
 </footer>
+
 
 </body>
 </html>

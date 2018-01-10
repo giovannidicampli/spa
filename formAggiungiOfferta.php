@@ -22,7 +22,7 @@ if ( $is_authorized ) { ?>
 
     <div class="col-md-6 col-md-offset-3">
 
-        <form class="form-horizontal" id="formOfferta" role="form" method="post" action="Functions/insertPrezzi.php">
+        <form class="form-horizontal" id="formOfferta" role="form" method="post" action="Functions/insertOfferta.php">
             <h2>Inserisci Offerta</h2>
 
             <div class="form-group">
@@ -43,6 +43,11 @@ if ( $is_authorized ) { ?>
                        class="form-control form-input" required="required">
             </div>
 
+
+<!--            <div class="form-group">-->
+<!--                <textarea class="form-control" id="descrizione" rows="3" tabindex="4" placeholder="Descrizione"></textarea>-->
+<!--            </div>-->
+
             <div class="form-group">
                 <input type="text" name="descrizione" id="descrizione" tabindex="4"
                        class="form-control form-input" placeholder="Descrizione">
@@ -52,6 +57,11 @@ if ( $is_authorized ) { ?>
                 <input type="text" name="prezzo" id="prezzoOfferta" tabindex="5"
                        class="form-control form-input"
                        placeholder="Prezzo" value="" required="required">
+            </div>
+
+            <div class="form-group">
+                <label for="uploadFoto">Carica un'immagine</label>
+                <input type="file" class="form-control-file" id="uploadFoto">
             </div>
 
             <div class="form-group">
