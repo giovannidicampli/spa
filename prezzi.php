@@ -10,7 +10,7 @@
     <link href="bootstrap-3.3.7-dist/css/main.css" rel="stylesheet" media="all">
 
 </head>
-<body>
+<body style="background-color: #d3c1a7"">
 
 <?php
 $selector = 2;
@@ -37,6 +37,8 @@ $query = ("SELECT * FROM offerta");
 $result = mysqli_query($conn, $query);
 
 while ($resultOfferta = mysqli_fetch_array($result)) {
+
+    //Formattano rispettivamente la data inizio e la data fine così gg/mm/aaaa
     $temp1 = explode(" ", $resultOfferta['dataInizio']);
     $temp2 = explode("-", $temp1[0]);
     $dataInizioFormattata = $temp2[2] . "/" . $temp2[1] . "/" . $temp2[0];
@@ -54,7 +56,7 @@ while ($resultOfferta = mysqli_fetch_array($result)) {
                 </h3>
                 <h4 style="color: #575757; "><?= $resultOfferta['descrizione'] ?></h4>
                 <h4>Prezzo: <? echo $resultOfferta['prezzo']; ?></h4>
-                <button class="btn btn-default" style="color: #0004d3">Acquista</button>
+                <? echo '<a href="acquista.php?id=' . $resultOfferta['id'] . '" class="btn btn-default" style="color: #d3a84c">Acquista</a>'?>
             </div>
             <div class="col-sm-4"><br><br>
                 <img src="Images/piscina.jpg" class="img-responsive" alt="image">
