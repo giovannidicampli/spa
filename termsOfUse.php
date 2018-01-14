@@ -16,7 +16,7 @@
 <body>
 
 <div class="container">
-    <div class="jumbotron" style="background: #FFFFFF; font-family: 'Lora', serif">
+    <div class="jumbotron" style="background: #FFFFFF; font-family: 'Lora', serif; margin-top: -50px">
         <div class="col-md-12">
             <h1>Termini di utilizzo</h1>
 

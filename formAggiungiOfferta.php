@@ -43,11 +43,6 @@ if ( $is_authorized ) { ?>
                        class="form-control form-input" required="required">
             </div>
 
-
-<!--            <div class="form-group">-->
-<!--                <textarea class="form-control" id="descrizione" rows="3" tabindex="4" placeholder="Descrizione"></textarea>-->
-<!--            </div>-->
-
             <div class="form-group">
                 <input type="text" name="descrizione" id="descrizione" tabindex="4"
                        class="form-control form-input" placeholder="Descrizione">
@@ -61,13 +56,14 @@ if ( $is_authorized ) { ?>
 
             <div class="form-group">
                 <label for="uploadFoto">Carica un'immagine</label>
-                <input type="file" class="form-control-file" id="uploadFoto">
+                <input type="file" class="form-control-file" id="uploadFoto" tabindex="5">
             </div>
 
             <div class="form-group">
                 <div class="col-sm-9 col-sm-offset-3">
-                    <a href="editPrezzi.php" class="btn btn-primary btn-block">Indietro</a>
-                    <button type="submit" id="submitOfferta" class="btn btn-primary btn-block">Salva</button>
+                    <a href="editPrezzi.php" class="btn btn-primary btn-block" tabindex="6">Indietro</a>
+                    <button type="submit" id="submitOfferta" class="btn btn-primary btn-block" tabindex="7">Salva
+                    </button>
                 </div>
             </div>
         </form>

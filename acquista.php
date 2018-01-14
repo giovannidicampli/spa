@@ -68,21 +68,17 @@ if ( $is_logged ) {
                         <input name="quantita" id="quantita" type="number" class="form-control text-center" value="1">
                     </td>
                     <td data-th="Giorno">
-                        <input name="data" id="data" type="date" class="" value="1">
+                        <input name="data" id="data" type="date" class="form-control form-input" value="1">
                     </td>
-
+                </form>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-                <td><a href="prezzi.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continua lo
-                        Shopping</a>
+                <td><a href="prezzi.php" class="btn btn-warning">Continua lo shopping</a>
                 </td>
-                <td><input class="btn btn-success btn-block" type="submit" value="Procedi"></td>
-                <td id="totale" class="hidden-xs text-center no_show"><strong> </strong></td>
-
+                <td><input class="btn btn-success" type="submit" value="Procedi"></td>
             </tr>
-            </form>
             </tfoot>
         </table>
     </div>

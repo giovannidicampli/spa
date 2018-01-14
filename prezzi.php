@@ -10,7 +10,8 @@
     <link href="bootstrap-3.3.7-dist/css/main.css" rel="stylesheet" media="all">
 
 </head>
-<body style="background-color: #d3c1a7"">
+<body style="background-color: #d3c1a7"
+">
 
 <?php
 $selector = 2;
@@ -18,7 +19,8 @@ include 'nav.php';
 ?>
 
 
-<div class="jumbotron" style="background: #d3c1a7; margin-top: -50px; font-family: "Roboto", Helvetica, Arial, sans-serif>
+<div class="jumbotron" style="background: #d3c1a7; margin-top: -50px; font-family: " Roboto
+", Helvetica, Arial, sans-serif>
 <div class="container text-center">
     <h1>Offerte online</h1>
     <p>le offerte spa che abbiamo scelto per te</p>
@@ -56,10 +58,10 @@ while ($resultOfferta = mysqli_fetch_array($result)) {
                 </h3>
                 <h4 style="color: #575757; "><?= $resultOfferta['descrizione'] ?></h4>
                 <h4>Prezzo: <? echo $resultOfferta['prezzo']; ?></h4>
-                <? echo '<a href="acquista.php?id=' . $resultOfferta['id'] . '" class="btn btn-default" style="color: #d3a84c">Acquista</a>'?>
+                <? echo '<a href="acquista.php?id=' . $resultOfferta['id'] . '" class="btn btn-default" style="color: #d3a84c">Acquista</a>' ?>
             </div>
             <div class="col-sm-4"><br><br>
-                <img src="Images/piscina.jpg" class="img-responsive" alt="image">
+                <img src="<?= $resultOfferta['immagine'] ?>" class="img-responsive" alt="image">
 
             </div>
         </div><!-- End row -->
