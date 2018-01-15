@@ -14,7 +14,7 @@
 ">
 
 <?php
-$selector = 2;
+$selector = 1;
 include 'nav.php';
 ?>
 

@@ -70,8 +70,7 @@
 </div>
 
 <!--Jumbotron-->
-<div class="jumbotron" style="background: #d3c1a7; font-family: " Roboto
-", Helvetica, Arial, sans-serif>
+<div class="jumbotron" style="background: #d3c1a7; font-family: " Roboto", Helvetica, Arial, sans-serif>
 <div class="container text-center">
     <h1>Benvenuto in Villa Salus</h1>
     <p>Il vostro SPA Resort in Molise ispirato dalla forza del mare.</p>

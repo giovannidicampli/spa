@@ -12,11 +12,11 @@
 <body>
 
 <?php
-$selector = 3;
+$selector = 2;
 include 'nav.php';
 ?>
 
-<div class="jumbotron" style="font-family: 'Lora', serif; background-color: #FFFFFF">
+<div class="jumbotron" style="background-color: #FFFFFF">
     <div class="container text-center">
 
         <h1>Dove Siamo</h1>
@@ -26,33 +26,9 @@ include 'nav.php';
         </div>
     </div>
     <div class="contact-form">
-        <div class="col-md-6 contact-top">
-            <h2>Hai qualche domanda?</h2>
-            <form>
-                <div>
-                    <span>Nome </span>
-                    <input type="text" value="">
-                </div>
-                <div>
-                    <span>Cognome </span>
-                    <input type="text" value="">
-                </div>
-                <div>
-                    <span>Email </span>
-                    <input type="text" value="">
-                </div>
-                <div>
-                    <span>Oggetto</span>
-                    <input type="text" value="">
-                </div>
-                <div>
-                    <span>Messaggio</span>
-                    <textarea> </textarea>
-                </div>
-                <input type="submit" value="Invia">
-            </form>
-        </div>
-        <div class="col-md-6 contact-left">
+
+        <div class="col-md-6 contact-top" style="font-family: Roboto, Helvetica, Arial, sans-serif">
+
             <h3>Indirizzo </h3>
 
             <div class="address">

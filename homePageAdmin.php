@@ -27,7 +27,7 @@
 <body>
 
 <?php
-$selector = 4;
+$selector = 3;
 include 'nav.php';
 ?>
 

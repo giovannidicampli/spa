@@ -25,20 +25,19 @@ $print_class = 'class="active"';
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li <?= ($selector == 0) ? $print_class : '' ?> ><a href="index.php">Home</a></li>
-                <li <?= ($selector == 1) ? $print_class : '' ?>><a href="struttura.php">Struttura</a></li>
-                <li <?= ($selector == 2) ? $print_class : '' ?>><a href="prezzi.php">Prezzi e Pacchetti</a></li>
-                <li <?= ($selector == 3) ? $print_class : '' ?>><a href="contatti.php">Contatti</a></li>
+                <li <?= ($selector == 1) ? $print_class : '' ?>><a href="prezzi.php">Prezzi e Pacchetti</a></li>
+                <li <?= ($selector == 2) ? $print_class : '' ?>><a href="contatti.php">Contatti</a></li>
                 <?php
                 if ( $is_authorized ) {
                     ?>
-                    <li <?= ($selector == 4) ? $print_class : '' ?>><a href="homePageAdmin.php">Profilo Admin</a></li>
-                    <li <?= ($selector == 5) ? $print_class : '' ?>><a href="editPrezzi.php">Modifica prezzi e
+                    <li <?= ($selector == 3) ? $print_class : '' ?>><a href="homePageAdmin.php">Profilo Admin</a></li>
+                    <li <?= ($selector == 4) ? $print_class : '' ?>><a href="editPrezzi.php">Modifica prezzi e
                             pacchetti</a></li>
                     <?php
                 }
                 if ( $is_logged && !$is_authorized ) {
                     ?>
-                    <li <?= ($selector == 6) ? $print_class : '' ?>><a href="homePageUser.php">Profilo</a></li>
+                    <li <?= ($selector == 5) ? $print_class : '' ?>><a href="homePageUser.php">Profilo</a></li>
                     <?php
                 }
                 ?>
@@ -54,6 +53,7 @@ $print_class = 'class="active"';
             } else {
                 ?>
                 <ul class="nav navbar-nav navbar-right">
+                    <li <?= ($selector == 6) ? $print_class : '' ?>><a href="formRegistrazione.php">Registrati</a></li>
                     <li <?= ($selector == 7) ? $print_class : '' ?>><a href="loginPage.php">Login</a></li>
                 </ul>
                 <?php
