@@ -14,7 +14,7 @@ if ( $is_logged ) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" media="all">
-        <link href="bootstrap-3.3.7-dist/css/main.css" rel="stylesheet" media="all">
+        <link href="bootstrap-3.3.7-dist/css/acquista.css" rel="stylesheet" media="all">
 
     </head>
 
@@ -43,8 +43,11 @@ if ( $is_logged ) {
 
     ?>
 
+
+
+
     <div class="container" style="background-color:#fff">
-        <table id="carrello" class="table table-hover table-condensed">
+        <table id="cart" class="table table-hover table-condensed">
             <thead>
             <tr>
                 <th style="width:50%">Prodotto</th>
@@ -63,30 +66,34 @@ if ( $is_logged ) {
                         </div>
                     </div>
                 </td>
-                <form id="acquista" role="form">
+                <form id="acquista" role="form" action="">
                     <td data-th="Quantità">
                         <input name="quantita" id="quantita" type="number" class="form-control text-center" value="1">
                     </td>
                     <td data-th="Giorno">
-                        <input name="data" id="data" type="date" class="form-control form-input" value="1">
+                        <input name="data" id="data" type="date" class="" value="1">
                     </td>
-                </form>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-                <td><a href="prezzi.php" class="btn btn-warning">Continua lo shopping</a>
+                <td><a href="prezzi.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue
+                        Shopping</a>
                 </td>
-                <td><input class="btn btn-success" type="submit" value="Procedi"></td>
+                <td><input class="btn btn-success btn-block" type="submit" value="Checkout"> </td>
+                <td id="totale" class="hidden-xs text-center no_show"><strong> </strong></td>
+
             </tr>
+            </form>
             </tfoot>
         </table>
     </div>
+
 
     </html>
 
 
 <?php } else {
-    header("Location: ./loginPage.php");
+    header("Location: ./formRegistrazioneBuy.php");
     //aggiungere messaggio
 } ?>

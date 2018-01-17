@@ -41,18 +41,7 @@ include 'nav.php';
                                placeholder="Password" required="required">
                     </div>
 
-<!--                    <div class="input-group">-->
-<!--                        <div class="checkbox">-->
-<!--                            <label>-->
-<!--                                <input id="login-remember" type="checkbox" name="remember" value="1"> Ricordami-->
-<!--                            </label>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-
                     <div style="margin-top:10px" class="form-group">
-                        <!-- Button -->
-
                         <div class="col-sm-12 controls">
                             <button type="submit" class="btn btn-primary">Login</button>
                         </div>

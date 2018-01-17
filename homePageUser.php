@@ -31,8 +31,7 @@ $selector = 5;
 include 'nav.php';
 ?>
 
-<div class="jumbotron" style="font-family: " Roboto
-", Helvetica, Arial, sans-serif>
+<div class="jumbotron" style="font-family: Roboto, Helvetica, Arial, sans-serif">
 <div class="container text-center">
     <h1>Benvenuto <?php echo $_SESSION['username']; ?>!</h1>
 </div>

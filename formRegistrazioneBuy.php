@@ -30,9 +30,20 @@ $selector = 6;
 include 'nav.php';
 ?>
 
-<br><br>
+<br>
+
+<div class="container-fluid">
+    <div class="alert alert-success">
+        <center>
+        <strong>Attenzione!</strong> Per proseguire con l'acquisto sei pregato di registrarti oppure di effettuare il login.
+        </center>
+    </div>
+</div>
+
+<br>
 
 <div class="container" style="margin: -10px">
+
 
     <form class="form-horizontal" id="registerForm" role="form" method="post" action="Functions/register.php">
         <div class="form-group">
@@ -82,14 +93,14 @@ include 'nav.php';
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" required="required">Dichiaro di aver letto e accettato i <a
-                                href="termsOfUse.php">termini</a>
+                            href="termsOfUse.php">termini</a>
                     </label>
                 </div>
                 <div class="checkbox">
                     <label>
                         <input type="checkbox" id="newsletter" name="newsletter" value="1" >Iscriviti alla Newsletter per non perdere sconti e
                         offerte!</a>
-                    </label>
+                    </label>el>
                 </div>
             </div>
         </div>
@@ -106,7 +117,7 @@ include 'nav.php';
 <!--*****Footer*****-->
 <!--****************-->
 
-<footer class="footer" style="background-color: #0f0f0f;">
+<footer style="background-color: #0f0f0f;">
     <div class="container text-center">
         <p style="color: #777; margin-top: 5px;">&copy; 2018 Villa Salus. All right reserved.</p>
         <ul class="list-inline">

@@ -23,11 +23,9 @@ while ($resultOfferta = mysqli_fetch_array($result)) {
 
     echo '<td>' . $resultOfferta['nome'] . '</td>';
     echo '<td>';
-    echo $dataInizioFormattata;
-    '</td>';
+    echo $dataInizioFormattata;'</td>';
     echo '<td>';
-    echo $dataFineFormattata;
-    '</td>';
+    echo $dataFineFormattata;'</td>';
     echo '<td>' . $resultOfferta['descrizione'] . '</td>';
     echo '<td>' . $resultOfferta['prezzo'] . '</td>';
 

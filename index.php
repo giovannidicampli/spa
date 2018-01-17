@@ -70,18 +70,17 @@
 </div>
 
 <!--Jumbotron-->
-<div class="jumbotron" style="background: #d3c1a7; font-family: " Roboto", Helvetica, Arial, sans-serif>
+<div class="jumbotron" style="background: #d3c1a7; font-family: Roboto, Helvetica, Arial, sans-serif">
 <div class="container text-center">
     <h1>Benvenuto in Villa Salus</h1>
-    <p>Il vostro SPA Resort in Molise ispirato dalla forza del mare.</p>
+    <p>Il vostro SPA Resort in Molise</p>
 </div>
 </div><!--Fine Jumbotron-->
 
 <!--Features-->
-<div class="container-fluid" align="center" style="background: #d3c1a7; margin-top: -29px; font-family: " Roboto
-", Helvetica, Arial, sans-serif>
+<div class="container-fluid" align="center" style="background: #d3c1a7; margin-top: -29px; font-family: Roboto, Helvetica, Arial, sans-serif">
 <div class="modal-header text-center" id="features">
-    <h1>I nostri punti di forza</h1>
+    <h1>I nostri servizi</h1>
 </div><!-- End Page Header -->
 
 <div class="row">
@@ -98,7 +97,7 @@
         <img src="Images/bagnoturco.jpg" class="img-responsive" alt="image">
     </div>
 
-</div><!-- End row -->
+</div>
 <br>
 <div class="row">
     <div class="col-sm-8">

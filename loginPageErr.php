@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <title>Login | VillaSalus</title>
 
-    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" type="text/css" media="all">
+
 </head>
 <body>
 <?php
@@ -12,17 +13,17 @@ $selector = 7;
 include 'nav.php';
 ?>
 
+
 <div class="container">
-    <div id="loginbox" style="margin-top:50px;  " class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+    <div id="loginbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
         <div class="panel panel-info">
             <div class="panel-heading">
                 <div class="panel-title">Login</div>
-                <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="index.php">Password
-                        dimenticata?</a>
+                <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="index.php"></a>
                 </div>
             </div>
 
-            <div style="padding-top:30px" class="panel-body">
+            <div style="padding-top:30px;" class="panel-body">
 
                 <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
 
@@ -40,46 +41,26 @@ include 'nav.php';
                                placeholder="Password" required="required">
                     </div>
 
-                    <div class="input-group">
-                        <div class="checkbox">
-                            <label>
-                                <input id="login-remember" type="checkbox" name="remember" value="1"> Ricordami
-                            </label>
-                        </div>
-                    </div>
-
-
-                    <div style="margin-top:10px" class="form-group">
-                        <!-- Button -->
-
-                        <div class="col-sm-12 controls">
-                            <button type="submit" class="btn btn-primary">Login</button>
-                        </div>
-                    </div>
                     <div class="alert alert-danger">
                         <strong>Attenzione!</strong> Username o Password errata.
                     </div>
 
-
-                    <div class="form-group">
-                        <div class="col-md-12 control">
-                            <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%">
-                                Non hai un account?
-                                <a href="formRegistrazione.php">Registrati!</a>
-                            </div>
+                    <div style="margin-top:10px" class="form-group">
+                        <div class="col-sm-12 controls">
+                            <button type="submit" class="btn btn-primary">Login</button>
                         </div>
                     </div>
                 </form>
-
-
             </div>
         </div>
     </div>
 </div>
 
+
 <!--****************-->
 <!--*****Footer*****-->
 <!--****************-->
+
 
 <footer class="footer" style="background-color: #0f0f0f;">
     <div class="container text-center">
@@ -91,6 +72,7 @@ include 'nav.php';
         </ul>
     </div>
 </footer>
+
 
 </body>
 </html>

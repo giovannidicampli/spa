@@ -8,6 +8,7 @@ $nome = filter_input(INPUT_POST, 'nome');
 $cognome = filter_input(INPUT_POST, 'cognome');
 $username = filter_input(INPUT_POST, 'username');
 $email = filter_input(INPUT_POST, 'email');
+$newsletter = filter_input(INPUT_POST, 'newsletter');
 $password = filter_input(INPUT_POST, 'password');
 //Cripta la password
 $password = md5($password);
@@ -22,7 +23,7 @@ if ( $numUsername != 0 ) {
 } else if ( $numMail != 0 ) {
     echo "Email esistente";
 } else {
-    $result = $db_instance->insert('utente', array('nome', 'cognome', 'username', 'email', 'password'), array($nome, $cognome, $username, $email, $password));
+    $result = $db_instance->insert('utente', array('nome', 'cognome', 'username', 'email', 'password', 'newsletter'), array($nome, $cognome, $username, $email, $password, $newsletter));
     if ( !$result ) {
         echo "Nessun inserimento nel DB";
     } else {
