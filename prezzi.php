@@ -52,8 +52,8 @@ while ($resultOfferta = mysqli_fetch_array($result)) {
             <div class="col-sm-8">
                 <h2 style="color: #A65139"><?= $resultOfferta['nome'] ?> </h2>
                 <div class="col-sm-5"><br>
-                    <img src="Images/piscina.jpg" class="img-responsive" alt="image">
-                    <!--<img src="--><?//= $resultOfferta['immagine'] ?><!--" class="img-responsive" alt="image">-->
+<!--                    <img src="Functions/immaginiOfferta/ok.png" class="img-responsive" alt="image">-->
+                    <img src="<?= $resultOfferta['immagine'] ?>" class="img-responsive" alt="image">
                 </div>
                 <h4 style="color: #332e22"> Valida dal: <?= $dataInizioFormattata ?> <br> al: <?= $dataFineFormattata ?></h4>
                 <h4 style="color: #575757; "><?= $resultOfferta['descrizione'] ?></h4>

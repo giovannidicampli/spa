@@ -77,7 +77,7 @@ if ( $is_logged ) {
             </tbody>
             <tfoot>
             <tr>
-                <td><a href="prezzi.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continue
+                <td><a href="prezzi.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continua lo
                         Shopping</a>
                 </td>
                 <td><input class="btn btn-success btn-block" type="submit" value="Checkout"> </td>

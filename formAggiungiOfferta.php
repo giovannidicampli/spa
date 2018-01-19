@@ -1,7 +1,7 @@
 <?php
-require_once 'Manager/SessionManager.php';
-
-if ( $is_authorized ) { ?>
+//require_once 'Manager/SessionManager.php';
+//
+//if ( $is_authorized ) { ?>
 
     <!DOCTYPE html>
     <html lang="it">
@@ -22,7 +22,8 @@ if ( $is_authorized ) { ?>
 
     <div class="col-md-6 col-md-offset-3">
 
-        <form class="form-horizontal" id="formOfferta" role="form" method="post" action="Functions/insertOfferta.php">
+        <form class="form-horizontal" id="formOfferta" role="form" method="post" enctype="multipart/form-data"
+              action="Functions/insertOfferta.php">
             <h2>Inserisci Offerta</h2>
 
             <div class="form-group">
@@ -78,7 +79,7 @@ if ( $is_authorized ) { ?>
     </body>
     </html>
 
-<?php } else {
-    header("Location: ./loginPage.php");
-    //aggiungere messaggio
-} ?>
+<?php //} else {
+//    header("Location: ./loginPage.php");
+//    //aggiungere messaggio
+//} ?>
