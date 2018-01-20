@@ -1,7 +1,7 @@
 <?php
-//require_once 'Manager/SessionManager.php';
-//
-//if ( $is_authorized ) { ?>
+require_once 'Manager/SessionManager.php';
+
+if ( $is_authorized ) { ?>
 
     <!DOCTYPE html>
     <html lang="it">
@@ -50,14 +50,15 @@
             </div>
 
             <div class="form-group">
-                <input type="text" name="prezzo" id="prezzoOfferta" tabindex="5"
+                <label for="prezzoOfferta">Prezzo in €</label>
+                <input type="number" name="prezzo" id="prezzoOfferta" tabindex="5"
                        class="form-control form-input"
                        placeholder="Prezzo" value="" required="required">
             </div>
 
             <div class="form-group">
                 <label for="uploadFoto">Carica un'immagine</label>
-                <input type="file" class="form-control-file" id="uploadFoto" tabindex="5">
+                <input type="file" class="form-control-file" id="immagine" name="immagine" tabindex="5">
             </div>
 
             <div class="form-group">
@@ -79,7 +80,7 @@
     </body>
     </html>
 
-<?php //} else {
-//    header("Location: ./loginPage.php");
-//    //aggiungere messaggio
-//} ?>
+<?php } else {
+    header("Location: ./loginPage.php");
+    //aggiungere messaggio
+} ?>

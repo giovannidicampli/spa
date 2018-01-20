@@ -9,17 +9,17 @@ $nome = filter_input(INPUT_POST, 'nome');
 $dataInizio = filter_input(INPUT_POST, 'dataInizo');
 $dataFine = filter_input(INPUT_POST, 'dataFine');
 $descrizione = filter_input(INPUT_POST, 'descrizione');
-$prezzo = filter_input(INPUT_POST, 'prezzo');
-$percorso = $_FILES['immagine']['tmp_name'];
-$immagine = $_FILES['immagine']['name'];
-
-if (move_uploaded_file($percorso, "immaginiOfferta/" . $immagine))
+$price = filter_input(INPUT_POST, 'prezzo');
+$prezzo = $price . " €";
+$destination_path = getcwd().DIRECTORY_SEPARATOR;
+$target_path = $destination_path . "immaginiOfferta/" . basename( $_FILES["immagine"]["name"]);
+if (@move_uploaded_file($_FILES['immagine']['tmp_name'], $target_path))
 {
-    $p = "Functions/immaginiOfferta/" . $immagine;
+    $p = "Functions/immaginiOfferta/" . basename( $_FILES["immagine"]["name"]);
 }
 else
 {
-    $p = "nessuna immagine";
+    $p = "Nessun inserimento";
 }
 
 
