@@ -10,9 +10,23 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript">
         $(function () {
-            $("#submitpassword").click(function () {
+            $("#submituser").click(function () {
                 var password = $("#password1").val();
                 var confirmPassword = $("#password2").val();
+                if (password != confirmPassword) {
+                    alert("La nuova password non coincide.");
+                    return false;
+                }
+                return true;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#submitpassword").click(function () {
+                var password = $("#nuovaPassword").val();
+                var confirmPassword = $("#nuovaPassword1").val();
                 if (password != confirmPassword) {
                     alert("La nuova password non coincide.");
                     return false;
@@ -41,7 +55,7 @@ include 'nav.php';
 <br><br>
 
 <div class="container-fluid">
-    <div class="container"
+    <div class="container" id="aggiungiAdmin"
          style="max-width: 400px; float: left; margin-left: 30px; margin-bottom: 30px;  background-color: #dfdfdf;">
 
         <h3>Aggiungi un nuovo utente</h3>
@@ -73,12 +87,12 @@ include 'nav.php';
 
             <div class="form-group">
                 <label style="margin-right: 13px" for="password">Password</label>
-                <input name="password" type="password" id="password" placeholder="Password" class="form-group-sm"
+                <input name="password1" type="password" id="password1" placeholder="Password" class="form-group-sm"
                        required="required">
             </div>
 
             <div class="form-group">
-                <label style="margin-right: 4px" for="password2">Ripeti Pass</label>
+                <label style="margin-right: 4px" for="password">Ripeti Pass</label>
                 <input type="password" id="password2" placeholder="Ripeti Password" class="form-group-sm"
                        required="required">
             </div>
@@ -90,7 +104,7 @@ include 'nav.php';
             </div>
 
             <div class="form-group">
-                <button type="submit" id="submit" class="btn btn-primary">Inserisci</button>
+                <button type="submit" id="submituser" class="btn btn-primary">Inserisci</button>
             </div>
         </form> <!-- /form -->
     </div>
@@ -98,12 +112,14 @@ include 'nav.php';
 
     <!--************Form cambio password****************-->
 
-    <div class="container"
+
+
+    <div class="container" id="cambiaPwdAdmin"
          style="max-width: 400px; float: right; margin-right: 10px ;margin-bottom: 30px;  background-color: #dfdfdf;">
 
         <h3>Cambia password</h3>
         <br>
-        <form class="form-group" id="registerForm" role="form"
+        <form class="form-group" id="cambiaPwdAdmin" role="form"
               method="post" <? echo 'action="Functions/updatePass.php?username=' . $_SESSION['username'] . '"'; ?>>
             <div class="form-group">
                 <label style="margin-right: 6px" for="nome">Vecchia Password</label>
@@ -113,13 +129,13 @@ include 'nav.php';
 
             <div class="form-group">
                 <label style="margin-right: 17px" for="cognome">Nuova Password</label>
-                <input name="password1" type="password" id="password1" class="form-group-sm" autofocus
+                <input name="nuovaPassword" type="password" id="nuovaPassword" class="form-group-sm" autofocus
                        required="required">
             </div>
 
             <div class="form-group">
                 <label style="margin-right: 7px" for="username">Ripeti Nuova Pass</label>
-                <input type="password" name="password2" id="password2" class="form-group-sm" autofocus
+                <input type="password" name="nuovaPassword1" id="nuovaPassword1" class="form-group-sm" autofocus
                        required="required">
             </div>
 

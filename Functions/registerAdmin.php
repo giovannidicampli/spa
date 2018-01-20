@@ -8,7 +8,7 @@ $nome = filter_input(INPUT_POST, 'nome');
 $cognome = filter_input(INPUT_POST, 'cognome');
 $username = filter_input(INPUT_POST, 'username');
 $email = filter_input(INPUT_POST, 'email');
-$password = filter_input(INPUT_POST, 'password');
+$password = filter_input(INPUT_POST, 'password1');
 //Cripta la password
 $password = md5($password);
 $admin = filter_input(INPUT_POST, 'admin');

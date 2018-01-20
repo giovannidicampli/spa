@@ -46,22 +46,22 @@ include 'nav.php';
     <h3>Cambia password</h3>
     <br>
     <form class="form-group" id="registerForm" role="form"
-          method="post" <? echo 'action="Functions/updatePass.php?username=' . $_SESSION['username'] . '"'; ?>>
+          method="post" <? echo 'action="Functions/updatePassUser.php?username=' . $_SESSION['username'] . '"'; ?>>
         <div class="form-group">
             <label style="margin-right: 6px" for="nome">Vecchia Password</label>
-            <input name="password" type="text" id="password" class="form-group-sm" autofocus
+            <input name="password" type="password" id="password" class="form-group-sm" autofocus
                    required="required">
         </div>
 
         <div class="form-group">
             <label style="margin-right: 17px" for="cognome">Nuova Password</label>
-            <input name="password1" type="text" id="password1" class="form-group-sm" autofocus
+            <input name="password1" type="password" id="password1" class="form-group-sm" autofocus
                    required="required">
         </div>
 
         <div class="form-group">
             <label style="margin-right: 7px" for="username">Ripeti Nuova Pass</label>
-            <input type="text" name="password2" id="password2" class="form-group-sm" autofocus
+            <input type="password" name="password2" id="password2" class="form-group-sm" autofocus
                    required="required">
         </div>
 

@@ -10,7 +10,7 @@ $username = filter_input(INPUT_GET, 'username');
 $vecchiaPassword = filter_input(INPUT_POST, 'password');
 $vecchiaPassword = md5($vecchiaPassword);
 
-$nuovaPassword = filter_input(INPUT_POST, 'nuovaPassword');
+$nuovaPassword = filter_input(INPUT_POST, 'password1');
 $nuovaPassword = md5($nuovaPassword);
 
 $query = ("SELECT * FROM utente WHERE username = '$username'");
@@ -33,7 +33,7 @@ if ( $resultPwd ['password'] == $vecchiaPassword ) {
 <body>
     <div class='container'>
             <h1>Completato con successo!</h1>
-            <a class='btn btn-primary' type='submit' href='../homePageAdmin.php'>Ok</a>
+            <a class='btn btn-primary' type='submit' href='../homePageUser.php'>Ok</a>
     </div>
 </body>";
 
@@ -52,7 +52,7 @@ if ( $resultPwd ['password'] == $vecchiaPassword ) {
     <div class='container'>
             <h1>Errore!</h1>
             <h3>Vecchia password errata</h3>
-            <a class='btn btn-primary' type='submit' href='../homePageAdmin.php'>Ok</a>
+            <a class='btn btn-primary' type='submit' href='../homePageUser.php'>Ok</a>
     </div>
 </body>";
 }
