@@ -30,10 +30,9 @@ $selector = 6;
 include 'nav.php';
 ?>
 
-<br><br>
+<br><br><br><br>
 
-<div class="container" style="margin: -10px">
-
+<div class="container" id="register">
     <form class="form-horizontal" id="registerForm" role="form" method="post" action="Functions/register.php">
         <div class="form-group">
             <label class="col-sm-3 control-label">Nome</label>
@@ -94,28 +93,22 @@ include 'nav.php';
             </div>
         </div>
         <div class="form-group">
-            <div class="col-sm-9 col-sm-offset-3">
+            <div class="col-sm-9 col-sm-offset-3" style="margin-bottom: 14px">
                 <button type="submit" id="submitpassword" class="btn btn-primary btn-block">Registrati</button>
             </div>
         </div>
     </form> <!-- /form -->
 </div>
 
+<br><br><br><br><br>
 
 <!--****************-->
 <!--*****Footer*****-->
 <!--****************-->
 
-<footer class="footer" style="background-color: #0f0f0f;">
-    <div class="container text-center">
-        <p style="color: #777; margin-top: 5px;">&copy; 2018 Villa Salus. All right reserved.</p>
-        <ul class="list-inline">
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">Twitter</a></li>
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">Facebook</a></li>
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">YouTube</a></li>
-        </ul>
-    </div>
-</footer>
+<?php
+include 'footer.php';
+?>
 
 </body>
 </html>

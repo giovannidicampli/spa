@@ -55,9 +55,7 @@ include 'nav.php';
 <br><br>
 
 <div class="container-fluid">
-    <div class="container" id="aggiungiAdmin"
-         style="max-width: 400px; float: left; margin-left: 30px; margin-bottom: 30px;  background-color: #dfdfdf;">
-
+    <div class="container aggiungiAdmin">
         <h3>Aggiungi un nuovo utente</h3>
         <br>
         <form class="form-group" id="registerForm" role="form" method="post" action="Functions/registerAdmin.php">
@@ -114,8 +112,7 @@ include 'nav.php';
 
 
 
-    <div class="container" id="cambiaPwdAdmin"
-         style="max-width: 400px; float: right; margin-right: 10px ;margin-bottom: 30px;  background-color: #dfdfdf;">
+    <div class="container cambiaPwdAdmin">
 
         <h3>Cambia password</h3>
         <br>
@@ -201,10 +198,6 @@ include 'nav.php';
 <!--    </div>-->
 <!--</div><!-- Fine secondo container -->
 
-<br>
-<!--****************-->
-<!--*****Footer*****-->
-<!--****************-->
 
 
 </body>

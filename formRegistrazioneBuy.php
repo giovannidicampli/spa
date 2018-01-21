@@ -32,19 +32,15 @@ include 'nav.php';
 
 <br>
 
-<div class="container-fluid">
+<div class="container-fluid eseguiLogin">
     <div class="alert alert-success">
-        <center>
-        <strong>Attenzione!</strong> Per proseguire con l'acquisto sei pregato di registrarti oppure di effettuare il login.
-        </center>
+            <strong>Attenzione!</strong> Per proseguire con l'acquisto sei pregato di registrarti oppure di effettuare il login.
     </div>
 </div>
 
 <br>
 
-<div class="container" style="margin: -10px">
-
-
+<div class="container" id="register">
     <form class="form-horizontal" id="registerForm" role="form" method="post" action="Functions/register.php">
         <div class="form-group">
             <label class="col-sm-3 control-label">Nome</label>
@@ -100,33 +96,27 @@ include 'nav.php';
                     <label>
                         <input type="checkbox" id="newsletter" name="newsletter" value="1" >Iscriviti alla Newsletter per non perdere sconti e
                         offerte!</a>
-                    </label>el>
+                    </label>
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <div class="col-sm-9 col-sm-offset-3">
+            <div class="col-sm-9 col-sm-offset-3" style="margin-bottom: 2px">
                 <button type="submit" id="submitpassword" class="btn btn-primary btn-block">Registrati</button>
             </div>
         </div>
     </form> <!-- /form -->
 </div>
 
+<br><br><br><br>
 
 <!--****************-->
 <!--*****Footer*****-->
 <!--****************-->
 
-<footer style="background-color: #0f0f0f;">
-    <div class="container text-center">
-        <p style="color: #777; margin-top: 5px;">&copy; 2018 Villa Salus. All right reserved.</p>
-        <ul class="list-inline">
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">Twitter</a></li>
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">Facebook</a></li>
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">YouTube</a></li>
-        </ul>
-    </div>
-</footer>
+<?php
+include 'footer.php';
+?>
 
 </body>
 </html>

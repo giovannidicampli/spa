@@ -31,17 +31,16 @@ $selector = 5;
 include 'nav.php';
 ?>
 
-<div class="jumbotron" style="font-family: Roboto, Helvetica, Arial, sans-serif">
+<div class="jumbotron" id="cambiaPwdUsr">
 <div class="container text-center">
     <h1>Benvenuto <?php echo $_SESSION['username']; ?>!</h1>
 </div>
 </div><!--Fine Jumbotron-->
 
-
+<br>
 <!--************Form cambio password****************-->
 
-<div class="container"
-     style="max-width: 400px; float: left; margin-left: 40px; margin-bottom: 30px;  background-color: #dfdfdf;">
+<div class="container cambiaPwdUsr">
 
     <h3>Cambia password</h3>
     <br>
@@ -76,16 +75,11 @@ include 'nav.php';
 <!--*****Footer*****-->
 <!--****************-->
 
-<footer class="footer" style="background-color: #0f0f0f">
-    <div class="container text-center">
-        <p style="color: #777; margin-top: 5px">&copy; 2018 Villa Salus. All right reserved.</p>
-        <ul class="list-inline">
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">Twitter</a></li>
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">Facebook</a></li>
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">YouTube</a></li>
-        </ul>
-    </div><!-- end Container-->
-</footer>
+<div class="footer">
+<?php
+include 'footer.php';
+?>
+</div>
 
 </body>
 </html>

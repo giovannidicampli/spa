@@ -14,11 +14,10 @@ if ( $is_logged ) {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="bootstrap-3.3.7-dist/css/style.css" rel="stylesheet" media="all">
-        <link href="bootstrap-3.3.7-dist/css/acquista.css" rel="stylesheet" media="all">
 
     </head>
 
-    <body style="background-color: #d3c1a7"
+    <body id="index">
 
     <?php
     $selector = 70;
@@ -44,22 +43,20 @@ if ( $is_logged ) {
     ?>
 
 
-
-
-    <div class="container" style="background-color:#fff">
+    <div class="container" id="checkout">
         <table id="cart" class="table table-hover table-condensed">
             <thead>
             <tr>
-                <th style="width:50%">Prodotto</th>
-                <th style="width:8%">Quantità</th>
-                <th style="width:8%">Giorno</th>
+                <th>Prodotto</th>
+                <th>Quantità</th>
+                <th>Giorno</th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td data-th="Prodotto">
                     <div class="row">
-                        <div class="col-sm-2 hidden-xs"><img src="http://placehold.it/100x100" alt="..."
+                        <div class="col-sm-2 hidden-xs"><img src="<?= $resultOfferta['immagine'] ?>" alt="..."
                                                              class="img-responsive"/></div>
                         <div class="col-sm-10">
                             <?php echo '<h4 class="nomargin">' . $resultOfferta ["nome"] . '</h4>'; ?>
@@ -71,16 +68,16 @@ if ( $is_logged ) {
                         <input name="quantita" id="quantita" type="number" class="form-control text-center" value="1">
                     </td>
                     <td data-th="Giorno">
-                        <input name="data" id="data" type="date" class="" value="1">
+                        <input name="data" id="dataCheckout" type="date" class="form-control-static text-center" value="1">
                     </td>
             </tr>
             </tbody>
             <tfoot>
             <tr>
-                <td><a href="prezzi.php" class="btn btn-warning"><i class="fa fa-angle-left"></i> Continua lo
+                <td><a href="prezzi.php" class="btn btn-warning"><i class="fa fa-angle-left"></i>Continua lo
                         Shopping</a>
                 </td>
-                <td><input class="btn btn-success btn-block" type="submit" value="Checkout"> </td>
+                <td><input class="btn btn-success btn-block" type="submit" value="Checkout"></td>
                 <td id="totale" class="hidden-xs text-center no_show"><strong> </strong></td>
 
             </tr>
@@ -89,6 +86,11 @@ if ( $is_logged ) {
         </table>
     </div>
 
+    <div class="footer">
+    <?php
+    include 'footer.php';
+    ?>
+    </div>
 
     </html>
 

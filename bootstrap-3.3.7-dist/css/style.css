@@ -2,13 +2,28 @@
 /*Stile Personalizzato*/
 /**********************/
 
+#index {
+    background-color: #d3c1a7;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+#indexDescr {
+    background-color: #d3c1a7;
+    margin-top: -29px;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    text-align: center;
+    color: #575757
+}
+
 .aggiungiAdmin {
 
-    max-width: 500px;
+    max-width: 350px;
     float: left;
     margin-left: 30px;
     margin-bottom: 30px;
     background-color: #dfdfdf;
+    padding-right: 15px;
+    margin-right: auto;
 }
 
 .cambiaPwdAdmin {
@@ -20,6 +35,35 @@
     background-color: #dfdfdf;
 }
 
+.cambiaPwdUsr {
+
+    max-width: 400px;
+    float: left;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: #dfdfdf;
+    padding-right: 15px;
+    margin-right: auto;
+}
+
+#cambiaPwdUsr {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    margin-bottom: -10px;
+}
+
+#registrato {
+    margin-left: 100px;
+}
+
+#register {
+    margin: -10px;
+}
+
+.eseguiLogin {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 .contact h1 {
     font-size: 4em;
@@ -180,13 +224,60 @@ section.two {
 .contact-top {
     background-color: #fff;
     padding: 4em;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
+/*****Stile prezzi*****/
+
+#prezzi1 {
+    background-color: #d3c1a7;
+    margin-top: -50px;
+}
+
+#prezzi2 {
+    color: #A65139;
+}
+
+#prezzi3 {
+    color: #332e22;
+}
+
+#prezzi4 {
+    color: #575757;
+}
+
+#prezzi5 {
+    color: #d3a84c;
+}
+
+.prezzi {
+    background-color: #d3c1a7;
+    margin-top: 20px;
+}
+
+/*********************/
+
+/********Login********/
+
+#loginbox {
+    margin-top: 50px;
+}
+
+#loginbox1 {
+    float: right;
+    font-size: 80%;
+    position: relative;
+    top: -10px;
+}
+
+#bottom {
+    margin-bottom: 25px;
+}
+
+/**********************/
 
 
-/*****************
-******Footer******
-*****************/
+/********Footer********/
 
 .footer {
     position: absolute;
@@ -194,3 +285,67 @@ section.two {
     left: 0;
     width: 100%;
 }
+
+#footer1 {
+    background-color: #0f0f0f
+}
+
+#twitter, #facebook, #youtube {
+    color: rgba(0, 183, 252, 0.43)
+}
+
+.footer1text {
+    color: #777;
+    margin-top: 5px
+}
+
+/***********************/
+
+
+/*********Acquista*********/
+
+#checkout {
+    background-color:#fff;
+}
+
+#dataCheckout {
+    height: 34px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+        width:20%;
+        display: inline !important;
+    }
+    .actions .btn{
+        width:36%;
+        margin:1.5em 0;
+    }
+
+    .actions .btn-info{
+        float:left;
+    }
+    .actions .btn-danger{
+        float:right;
+    }
+
+    table#cart thead { display: none; }
+    table#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+    table#cart tbody tr td:first-child { background: #fff; color: #333; }
+    table#cart tbody td:before {
+        content: attr(data-th); font-weight: bold;
+        display: inline-block; width: 8rem;
+    }
+
+
+
+    table#cart tfoot td{display:block; }
+    table#cart tfoot td .btn{display:block;}
+
+}
+/**************************/

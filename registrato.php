@@ -13,23 +13,20 @@ $selector = 7;
 include 'nav.php';
 ?>
 
+<div class="jumbotron" id="registrato">
+    <h2>Registrazione effettuata con successo!</h2>
+    <h4>Ti abbiamo inviato una email. Puoi già procedere al login.</h4>
+</div>
 
 <!--****************-->
 <!--*****Footer*****-->
 <!--****************-->
 
-<footer class="footer" style="background-color: #0f0f0f;">
-    <div class="container text-center">
-        <p style="color: #777; margin-top: 5px;">&copy; 2018 Villa Salus. All right reserved.</p>
-        <ul class="list-inline">
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">Twitter</a></li>
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">Facebook</a></li>
-            <li><a href="#" style="color: rgba(0,183,252,0.43)">YouTube</a></li>
-        </ul>
-    </div>
-</footer>
+<div class="footer">
+<?php
+include 'footer.php';
+?>
+</div>
 
 </body>
 </html>
-
-<?php echo "Registrazione effettuata con successo! Ti abbiamo inviato una email."; ?>
