@@ -27,9 +27,10 @@ while ($resultOfferta = mysqli_fetch_array($result)) {
     echo '<td>';
     echo $dataFineFormattata;'</td>';
     echo '<td>' . $resultOfferta['descrizione'] . '</td>';
-    echo '<td>' . $resultOfferta['prezzo'] . '</td>';
+    echo '<td>' . $resultOfferta['prezzo'] . ' €</td>';
 
     echo '<td> <a onclick="return confirm(\'Confermi?\');" href="/spa/Functions/deleteOfferta.php?id=' . $resultOfferta['id'] . '"> Elimina </a> </td>';
+    echo '<td> <a href="../spa/formUpdateOfferta.php?id=' . $resultOfferta['id'] . '"> Modifica </a> </td>';
 
     echo "</tr>";
 }

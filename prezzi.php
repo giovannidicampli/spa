@@ -52,12 +52,19 @@ while ($resultOfferta = mysqli_fetch_array($result)) {
             <div class="col-sm-8">
                 <h2 id="prezzi2"><?= $resultOfferta['nome'] ?> </h2>
                 <div class="col-sm-5"><br>
-<!--                    <img src="Functions/immaginiOfferta/ok.png" class="img-responsive" alt="image">-->
-                    <img src="<?= $resultOfferta['immagine'] ?>" class="img-responsive" alt="image">
+                    <? //Questo if serve a controllare se l'offerta ha un'immagine
+                    if ($resultOfferta ['immagine'] == "Nessun inserimento") {
+                        //Se non c'è l'immagine è quella di default
+                        $image = 'Functions/immaginiOfferta/default.png' ;
+                    } else {
+                        //Altrimenti l'immagine è quella inserita
+                        $image = $resultOfferta ['immagine'];
+                    }
+                    echo '<img src="' . $image . '" class="img-responsive" />';?>
                 </div>
                 <h4 id="prezzi3"> Valida dal: <?= $dataInizioFormattata ?> <br> al: <?= $dataFineFormattata ?></h4>
                 <h4 id="prezzi4"><?= $resultOfferta['descrizione'] ?></h4>
-                <h4>Prezzo: <? echo $resultOfferta['prezzo']; ?></h4>
+                <h4>Prezzo: <? echo $resultOfferta['prezzo']; ?> €</h4>
                 <h4>  <? echo '<a id="prezzi5" href="acquista.php?id=' . $resultOfferta['id'] . '" class="btn btn-default">Acquista</a>' ?> </h4>
             <br><br>
             </div>

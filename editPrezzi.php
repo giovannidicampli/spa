@@ -40,7 +40,7 @@ if ( $is_authorized ) {
         <table class="table">
             <thead>
             <tr>
-                <th colspan="6">Offerte Online</th>
+                <th colspan="7">Offerte Online</th>
             </tr>
             <tr>
                 <th colspan="">Nome</th>

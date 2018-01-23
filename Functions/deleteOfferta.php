@@ -11,7 +11,7 @@ $query = ("DELETE FROM offerta WHERE id = '$thisID' ");
 $result = mysqli_query($conn, $query);
 
 
-if ( mysqli_query($conn, $query) ) {
+if ( $result ) {
 
     header("location: ../editPrezzi.php");
 

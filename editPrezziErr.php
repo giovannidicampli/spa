@@ -38,14 +38,14 @@ if ( $is_authorized ) {
     </div>
 
     <div class="alert alert-danger">
-        <strong>Attenzione!</strong> Inserimento offerta non effettuato.
+        <strong>Attenzione!</strong> Operazione non andata a buon fine.
     </div>
 
     <div>
         <table class="table table-striped">
             <thead>
             <tr>
-                <th colspan="6">Offerte Online</th>
+                <th colspan="7">Offerte Online</th>
             </tr>
             <tr>
                 <th>Nome</th>
