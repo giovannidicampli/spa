@@ -146,57 +146,63 @@ include 'nav.php';
 
 
 
-<!--<div class="container-fluid"><!--Cambio dati personali NON FUNZIONA BENE-->
-<!---->
-<!--    --><?php //TODO
-//require_once 'Functions/MysqlManager.php';
-//
-//$funzioniMysql = new MysqlClass();
-//$conn = $funzioniMysql->connetti();
-//
-//$query = ("SELECT * FROM utente");
-//
-//
-//$result = mysqli_query($conn, $query);
-//$resultID = mysqli_fetch_array($result);
-//?>
-<!---->
-<!---->
-<!---->
-<!---->
-<!--    <div class="container"-->
-<!--         style="max-width: 400px; float: left; margin-left: 30px; margin-bottom: 30px;  background-color: #dfdfdf;">-->
-<!---->
-<!--        <h3>Cambia dati personali</h3>-->
-<!--        <br>-->
-<!--        <form class="form-group" id="registerForm" role="form" method="post" --><?// echo 'action="Functions/updatePersonal.php?id=' . $resultID['id'] . '"'; ?><!-->
-<!--            <div class="form-group">-->
-<!--                <label style="margin-right: 39px" for="nome">Nome</label>-->
-<!--                <input name="nomeNew" type="text" id="nome" placeholder="Nome" class="form-group-sm" autofocus>-->
-<!--            </div>-->
-<!---->
-<!--            <div class="form-group">-->
-<!--                <label style="margin-right: 15px" for="cognome">Cognome</label>-->
-<!--                <input name="cognomeNew" type="text" id="cognomeNew" placeholder="Cognome" class="form-group-sm" autofocus>-->
-<!--            </div>-->
-<!---->
-<!--            <div class="form-group">-->
-<!--                <label style="margin-right: 11px" for="username">Username</label>-->
-<!--                <input type="text" name="usernameNew" id="username" placeholder="Username" class="form-group-sm" autofocus>-->
-<!--            </div>-->
-<!---->
-<!--            <div class="form-group">-->
-<!--                <label style="margin-right: 44px" for="email">Email</label>-->
-<!--                <input name="emailNew" type="email" id="email" placeholder="Email" class="form-group-sm">-->
-<!--            </div>-->
-<!---->
-<!---->
-<!--            <div class="form-group">-->
-<!--                <button type="submit" id="submit" class="btn btn-primary">Inserisci</button>-->
-<!--            </div>-->
-<!--        </form> <!-- /form -->
-<!--    </div>-->
-<!--</div><!-- Fine secondo container -->
+<!--
+
+<div class="container-fluid"> <!--Cambio dati personali NON FUNZIONA BENE-->
+
+    <?php
+/*require_once 'Functions/MysqlManager.php';
+
+$funzioniMysql = new MysqlClass();
+$conn = $funzioniMysql->connetti();
+
+$query = ("SELECT * FROM utente");
+
+
+$result = mysqli_query($conn, $query);
+$resultID = mysqli_fetch_array($result);
+*/?>
+
+
+
+
+    <!--
+
+    <div class="container"
+         style="max-width: 400px; float: left; margin-left: 30px; margin-bottom: 30px;  background-color: #dfdfdf;">
+
+        <h3>Cambia dati personali</h3>
+        <br>
+        <form class="form-group" id="registerForm" role="form" method="post" <?/* echo 'action="Functions/updatePersonal.php?id=' . $resultID['id'] . '"'; */?>>
+            <div class="form-group">
+                <label style="margin-right: 39px" for="nome">Nome</label>
+                <input name="nomeNew" type="text" id="nome" placeholder="Nome" class="form-group-sm" autofocus>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-right: 15px" for="cognome">Cognome</label>
+                <input name="cognomeNew" type="text" id="cognomeNew" placeholder="Cognome" class="form-group-sm" autofocus>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-right: 11px" for="username">Username</label>
+                <input type="text" name="usernameNew" id="username" placeholder="Username" class="form-group-sm" autofocus>
+            </div>
+
+            <div class="form-group">
+                <label style="margin-right: 44px" for="email">Email</label>
+                <input name="emailNew" type="email" id="email" placeholder="Email" class="form-group-sm">
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn btn-primary">Inserisci</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+-->
 
 
 
