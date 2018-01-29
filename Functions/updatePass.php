@@ -1,9 +1,8 @@
 <?php
 
-require_once 'MysqlManager.php';
+require_once __DIR__ . '/../Manager/DbManager.php';
 
-$funzioniMysql = new MysqlClass();
-$conn = $funzioniMysql->connetti();
+$db_instance = new DbManager();
 
 $username = filter_input(INPUT_GET, 'username');
 
@@ -13,18 +12,18 @@ $vecchiaPassword = md5($vecchiaPassword);
 $nuovaPassword = filter_input(INPUT_POST, 'nuovaPassword');
 $nuovaPassword = md5($nuovaPassword);
 
-$query = ("SELECT * FROM utente WHERE username = '$username'");
-$result = mysqli_query($conn, $query);
+$result = $db_instance->select([], 'utente', "username='$username'");
+
 $resultPwd = mysqli_fetch_array($result);
 
 if ( $resultPwd ['password'] == $vecchiaPassword ) {
 
-    $query2 = ("UPDATE utente SET password = '$nuovaPassword' WHERE username = '$username'");
-    $result2 = mysqli_query($conn, $query2);
+
+    $result2 = $db_instance->update('utente', "password = '$nuovaPassword'", "username = '$username'");
 
     if ( $result2 ) {
 
-        echo "<!DOCTYPE html>
+            echo "<!DOCTYPE html>
 <html lang=\"it\">
 <head>
     <title>VillaSalus</title>
@@ -37,12 +36,12 @@ if ( $resultPwd ['password'] == $vecchiaPassword ) {
     </div>
 </body>";
 
+        } else {
+            echo 'errore';
+        }
     } else {
-        echo 'errore';
-    }
-} else {
 
-    echo "<!DOCTYPE html>
+        echo "<!DOCTYPE html>
 <html lang=\"it\">
 <head>
     <title>VillaSalus</title>
@@ -55,6 +54,6 @@ if ( $resultPwd ['password'] == $vecchiaPassword ) {
             <a class='btn btn-primary' type='submit' href='../homePageAdmin.php'>Ok</a>
     </div>
 </body>";
-}
+    }
 
-$conn = $funzioniMysql->disconnetti();
+$db_instance->connection->close();

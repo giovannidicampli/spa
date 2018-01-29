@@ -20,15 +20,15 @@ if ( $is_authorized ) { ?>
     include 'nav.php';
 
 
-    require_once 'Functions/MysqlManager.php';
+    require_once 'Manager/DbManager.php';
 
     $idOfferta = filter_input(INPUT_GET, 'id');
 
-    $funzioniMysql = new MysqlClass();
-    $conn = $funzioniMysql->connetti();
+    $db_instance = new DbManager();
 
-    $query = ("SELECT * FROM offerta WHERE id = '$idOfferta'");
-    $result = mysqli_query($conn, $query);
+    $result = $db_instance->select([], 'offerta', "id='$idOfferta'");
+
+
     while ($resultOfferta = mysqli_fetch_array($result)) {
         ?>
 

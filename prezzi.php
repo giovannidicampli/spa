@@ -26,14 +26,13 @@ include 'nav.php';
 
 
 <?php
-require_once 'Functions/MysqlManager.php';
+require_once 'Manager/DbManager.php';
 
 
-$funzioniMysql = new MysqlClass();
-$conn = $funzioniMysql->connetti();
+$db_instance = new DbManager();
 
-$query = ("SELECT * FROM offerta");
-$result = mysqli_query($conn, $query);
+$result = $db_instance->select([], 'offerta', "");
+
 
 while ($resultOfferta = mysqli_fetch_array($result)) {
 

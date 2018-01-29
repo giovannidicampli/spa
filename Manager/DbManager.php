@@ -55,7 +55,6 @@ class DbManager
     {
         $sql = 'INSERT INTO ' . $tabella . '(';
         if ( !$campi ) {
-            //ERRORE
         } else {
             if ( is_array($campi) ) {
                 $i = 0;
@@ -72,7 +71,6 @@ class DbManager
         }
         $sql .= 'VALUES (';
         if ( !$valori ) {
-            //ERRORE
         } else {
             if ( is_array($valori) ) {
                 $i = 0;

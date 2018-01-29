@@ -1,14 +1,13 @@
 <?php
 
-require_once 'MysqlManager.php';
+require_once '../Manager/DbManager.php';
 
-$funzioniMysql = new MysqlClass();
-$conn = $funzioniMysql->connetti();
+$db_instance = new DbManager();
+
 $thisID = filter_input(INPUT_GET, 'id');
 
-$query = ("DELETE FROM offerta WHERE id = '$thisID' ");
 
-$result = mysqli_query($conn, $query);
+$result = $db_instance->queryString("DELETE FROM offerta WHERE id = '$thisID'");
 
 
 if ( $result ) {
@@ -33,3 +32,4 @@ if ( $result ) {
     </div>
 </body>";
 }
+$db_instance->connection->close();

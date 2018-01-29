@@ -28,15 +28,14 @@ if ( $is_logged ) {
 
     <?php
 
-    require_once 'Functions/MysqlManager.php';
+    require_once 'Manager/DbManager.php';
 
-    $funzioniMysql = new MysqlClass();
-    $conn = $funzioniMysql->connetti();
+    $db_instance = new DbManager();
+
     $thisID = filter_input(INPUT_GET, 'id');
 
-    $query = ("SELECT * FROM offerta WHERE id = '$thisID' ");
+    $result = $db_instance->select([], 'offerta', "id='$thisID'");
 
-    $result = mysqli_query($conn, $query);
 
     $resultOfferta = mysqli_fetch_array($result);
 
@@ -56,8 +55,15 @@ if ( $is_logged ) {
             <tr>
                 <td data-th="Prodotto">
                     <div class="row">
-                        <div class="col-sm-2 hidden-xs"><img src="<?= $resultOfferta['immagine'] ?>" alt="..."
-                                                             class="img-responsive"/></div>
+                        <div class="col-sm-2 hidden-xs"><img <? //Questo if serve a controllare se l'offerta ha un'immagine
+                            if ($resultOfferta ['immagine'] == "Nessun inserimento") {
+                                //Se non c'è l'immagine è quella di default
+                                $image = 'Functions/immaginiOfferta/default.png' ;
+                            } else {
+                                //Altrimenti l'immagine è quella inserita
+                                $image = $resultOfferta ['immagine'];
+                            }
+                            echo '<img src="' . $image . '" class="img-responsive" />';?></div>
                         <div class="col-sm-10">
                             <?php echo '<h4 class="nomargin">' . $resultOfferta ["nome"] . '</h4>'; ?>
                         </div>
@@ -77,7 +83,7 @@ if ( $is_logged ) {
                 <td><a href="prezzi.php" class="btn btn-warning"><i class="fa fa-angle-left"></i>Continua lo
                         Shopping</a>
                 </td>
-                <td><input class="btn btn-success btn-block" type="submit" value="Checkout"></td>
+                <td><input class="btn btn-success btn-block" value="Checkout"></td>
                 <td id="totale" class="hidden-xs text-center no_show"><strong> </strong></td>
 
             </tr>

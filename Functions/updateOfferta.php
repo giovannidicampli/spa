@@ -1,9 +1,8 @@
 <?php
 
-require_once 'MysqlManager.php';
+require_once __DIR__ . '/../Manager/DbManager.php';
 
-$funzioniMysql = new MysqlClass();
-$conn = $funzioniMysql->connetti();
+$db_instance = new DbManager();
 
 $idOfferta = filter_input(INPUT_GET, 'id');
 
@@ -24,10 +23,9 @@ else
     $immagineNew = "Nessun inserimento";
 }
 
+$result = $db_instance->update('offerta', "nome = '$nomeNew', dataInizio = '$dataInizioNew', dataFine = '$dataFineNew',
+descrizione = '$descrizioneNew', prezzo = '$prezzoNew', immagine = '$immagineNew'", "id = '$idOfferta'");
 
-$query = ("UPDATE offerta SET nome = '$nomeNew', dataInizio = '$dataInizioNew', dataFine = '$dataFineNew',
- descrizione = '$descrizioneNew', prezzo = '$prezzoNew', immagine = '$immagineNew' WHERE id = '$idOfferta'");
-    $result = mysqli_query($conn, $query);
 
 if ( $result ) {
     header("location: ../editPrezzi.php");
@@ -35,4 +33,4 @@ if ( $result ) {
     header("location: ../editPrezziErr.php");
 }
 
-$conn = $funzioniMysql->disconnetti();
+$db_instance->connection->close();

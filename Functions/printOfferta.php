@@ -1,13 +1,11 @@
 <?php
-require_once 'MysqlManager.php';
+require_once __DIR__ . '/../Manager/DbManager.php';
 
-$funzioniMysql = new MysqlClass();
-$conn = $funzioniMysql->connetti();
-
-$query = ("SELECT * FROM offerta");
+$db_instance = new DbManager();
 
 
-$result = mysqli_query($conn, $query);
+$result = $db_instance->select([], 'offerta', "");
+
 
 while ($resultOfferta = mysqli_fetch_array($result)) {
 

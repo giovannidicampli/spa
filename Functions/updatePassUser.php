@@ -1,9 +1,8 @@
 <?php
 
-require_once 'MysqlManager.php';
+require_once '../Manager/DbManager.php';
 
-$funzioniMysql = new MysqlClass();
-$conn = $funzioniMysql->connetti();
+$db_instance = new DbManager();
 
 $username = filter_input(INPUT_GET, 'username');
 
@@ -13,14 +12,13 @@ $vecchiaPassword = md5($vecchiaPassword);
 $nuovaPassword = filter_input(INPUT_POST, 'password1');
 $nuovaPassword = md5($nuovaPassword);
 
-$query = ("SELECT * FROM utente WHERE username = '$username'");
-$result = mysqli_query($conn, $query);
+$result = $db_instance->select([], 'utente', "username='$username'");
+
 $resultPwd = mysqli_fetch_array($result);
 
 if ( $resultPwd ['password'] == $vecchiaPassword ) {
 
-    $query2 = ("UPDATE utente SET password = '$nuovaPassword' WHERE username = '$username'");
-    $result2 = mysqli_query($conn, $query2);
+    $result2 = $db_instance->update('utente', "password = '$nuovaPassword'", "username = '$username'");
 
     if ( $result2 ) {
 
@@ -57,4 +55,4 @@ if ( $resultPwd ['password'] == $vecchiaPassword ) {
 </body>";
 }
 
-$conn = $funzioniMysql->disconnetti();
+$db_instance->connection->close();
